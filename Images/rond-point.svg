@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <rect width="500" height="500" fill="#8cc63f"/>
+  <g fill="#7ab532">
+    <circle cx="60" cy="60" r="28"/><circle cx="440" cy="70" r="22"/><circle cx="430" cy="430" r="30"/><circle cx="70" cy="440" r="20"/>
+  </g>
+  <!-- routes -->
+  <rect x="170" y="0" width="160" height="500" fill="#3a3f47"/>
+  <rect x="0" y="170" width="500" height="160" fill="#3a3f47"/>
+  <circle cx="250" cy="250" r="165" fill="#3a3f47"/>
+  <!-- trottoirs -->
+  <g fill="none" stroke="#e9ecef" stroke-width="4">
+    <path d="M170 0V95M330 0V95M170 500V405M330 500V405M0 170H95M0 330H95M500 170H405M500 330H405"/>
+  </g>
+  <!-- marquages -->
+  <g fill="none" stroke="#ffffff" stroke-width="3" stroke-dasharray="16 14">
+    <path d="M250 0V85M250 500V415M0 250H85M500 250H415"/>
+    <circle cx="250" cy="250" r="115"/>
+  </g>
+  <!-- îlot central -->
+  <circle cx="250" cy="250" r="62" fill="#ffffff"/>
+  <circle cx="250" cy="250" r="56" fill="#5fa832"/>
+  <circle cx="250" cy="250" r="18" fill="#c8102e"/>
+</svg>
