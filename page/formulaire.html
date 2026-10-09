@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription – Londres</title>
+  <meta name="description" content="Créer un compte sur le site Londres.">
+  <meta name="author" content="Hadi Assi">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='white' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../script/main.js" defer></script>
+  <script src="../script/formulaire.js" defer></script>
+</head>
+<body style="--accent: #B36305;">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html">Londres<span>.</span></a>
+      <nav class="line" aria-label="Pages du site">
+        <ol>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="Geographie.html">Géographie</a></li>
+          <li><a href="Histoire.html">Histoire</a></li>
+          <li><a href="Culture.html">Culture</a></li>
+          <li><a href="Demographie.html">Démographie</a></li>
+          <li><a href="Traces.html">Traces</a></li>
+          <li><a href="formulaire.html" aria-current="page">Inscription</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="page-head">
+      <div class="wrap">
+        <h1>Inscription</h1>
+        <p class="lead">Créez votre compte pour recevoir nos conseils de voyage à Londres.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <form id="form1" class="form" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="txtUsername">Nom d’utilisateur</label>
+              <input type="text" id="txtUsername" name="txtUsername" aria-describedby="txtUsername-erreur" autocomplete="username" maxlength="12">
+              <span class="hint">Entre 7 et 12 caractères.</span>
+              <span class="error" id="txtUsername-erreur" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="txtPassword">Mot de passe</label>
+              <input type="password" id="txtPassword" name="txtPassword" aria-describedby="txtPassword-erreur" autocomplete="new-password" maxlength="12">
+              <span class="hint">Entre 7 et 12 caractères.</span>
+              <span class="error" id="txtPassword-erreur" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="txtFirstname">Prénom</label>
+              <input type="text" id="txtFirstname" name="txtFirstname" aria-describedby="txtFirstname-erreur" autocomplete="given-name">
+              
+              <span class="error" id="txtFirstname-erreur" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="txtLastname">Nom</label>
+              <input type="text" id="txtLastname" name="txtLastname" aria-describedby="txtLastname-erreur" autocomplete="family-name">
+              
+              <span class="error" id="txtLastname-erreur" aria-live="polite"></span>
+            </div>
+            <div class="field full">
+              <label for="txtAddress">Adresse</label>
+              <input type="text" id="txtAddress" name="txtAddress" aria-describedby="txtAddress-erreur" autocomplete="street-address">
+              
+              <span class="error" id="txtAddress-erreur" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="txtCode">Code postal</label>
+              <input type="text" id="txtCode" name="txtCode" aria-describedby="txtCode-erreur" inputmode="numeric" autocomplete="postal-code" maxlength="5">
+              <span class="hint">5 chiffres.</span>
+              <span class="error" id="txtCode-erreur" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="txtEmail">E-mail</label>
+              <input type="email" id="txtEmail" name="txtEmail" aria-describedby="txtEmail-erreur" autocomplete="email">
+              
+              <span class="error" id="txtEmail-erreur" aria-live="polite"></span>
+            </div>
+            <fieldset class="field full" style="border: 0; padding: 0; margin: 0 0 18px;">
+              <legend class="label" style="margin-bottom: 6px;">Genre</legend>
+              <div class="radios">
+                <label><input type="radio" name="genre" id="Male" value="Homme"> Homme</label>
+                <label><input type="radio" name="genre" id="Female" value="Femme"> Femme</label>
+                <label><input type="radio" name="genre" id="Autre" value="Autre"> Ne pas préciser</label>
+              </div>
+            </fieldset>
+            <div class="field full">
+              <label for="txtAbout">À propos de vous <span class="hint">(facultatif)</span></label>
+              <textarea id="txtAbout" name="txtAbout" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn" id="btnRegister">Créer mon compte</button>
+            <button type="reset" class="btn ghost" id="btnClear">Effacer</button>
+          </div>
+          <p class="result" id="resultat-form" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p>Projet web réalisé par Hadi Assi.</p>
+        <p>Textes et images : voir les sources dans le fichier README du projet.</p>
+      </div>
+      <ul>
+        <li><a href="https://www.instagram.com/london/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/visitlondon/">Facebook</a></li>
+        <li><a href="https://www.youtube.com/watch?v=I8KSAtos-dk">Hymne national</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

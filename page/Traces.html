@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traces – Londres</title>
+  <meta name="description" content="Les monuments célèbres de Londres et les lieux de tournage d’Harry Potter au Royaume-Uni.">
+  <meta name="author" content="Hadi Assi">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='white' stroke='%23C8102E' stroke-width='6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../script/main.js" defer></script>
+  <script src="../script/Traces.js" defer></script>
+</head>
+<body style="--accent: #1D2433;">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../index.html">Londres<span>.</span></a>
+      <nav class="line" aria-label="Pages du site">
+        <ol>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="Geographie.html">Géographie</a></li>
+          <li><a href="Histoire.html">Histoire</a></li>
+          <li><a href="Culture.html">Culture</a></li>
+          <li><a href="Demographie.html">Démographie</a></li>
+          <li><a href="Traces.html" aria-current="page">Traces</a></li>
+          <li><a href="formulaire.html">Inscription</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="page-head">
+      <div class="wrap">
+        <h1>Traces</h1>
+        <p class="lead">Big Ben, le palais de Westminster et, au-delà de Londres, les lieux de tournage d’Harry Potter.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="tool" id="quiz-monument">
+          <h3>Le Tower Bridge est-il la structure la plus célèbre de Londres ?</h3>
+          <div class="tool-row">
+            <button type="button" class="btn" data-reponse="oui">Oui</button>
+            <button type="button" class="btn ghost" data-reponse="non">Non</button>
+          </div>
+          <p class="result" id="resultat-monument" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div class="prose">
+          <h2>Big Ben</h2>
+          <p>Big Ben est la tour de l’horloge du palais de Westminster et un symbole de Londres. Le palais, siège du Parlement britannique, fait face à la Tamise, entre le pont de Westminster et l’abbaye de Westminster.</p>
+          <p>Son nom officiel, d’abord Clock Tower (« la tour de l’Horloge »), est devenu Elizabeth Tower (« la tour Élisabeth ») en 2012, pour le jubilé de diamant d’Élisabeth II. On l’appelle couramment Big Ben (« le gros Ben »), qui est en fait le surnom de la cloche de 13,7 tonnes située au sommet. Seules les personnes qui habitent au Royaume-Uni peuvent visiter la tour, avec une autorisation.</p>
+        </div>
+        <figure><img src="../Images/imgtrace.jfif" alt="La tour de Big Ben au coucher du soleil" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrap split">
+        <div class="prose">
+          <h2>L’ancien palais</h2>
+          <p>En octobre 1834, un terrible incendie a détruit l’ancien palais qui abritait le Parlement depuis 1512. L’édifice servait aussi de résidence royale à Londres depuis Guillaume le Conquérant. Seule une petite partie a pu être sauvée : le Westminster Hall, les cloîtres et la crypte de la chapelle Saint-Étienne, ainsi que la Jewel Tower, une construction du XIVe siècle où étaient gardés les joyaux et l’or de la Couronne.</p>
+        </div>
+        <div class="prose">
+          <h2>Le nouveau palais</h2>
+          <p>Après l’incendie, 97 projets ont été proposés pour le nouvel édifice. Les architectes Charles Barry et Augustus Welby Pugin ont été choisis. En 1847, le palais était presque terminé, avec déjà 1 200 pièces, 11 cours et 3,5 kilomètres de couloirs.</p>
+          <p>Sa façade offre un très beau panorama, et ses pinacles dorés et ses statues de rois se reflètent dans le fleuve. Le palais est encadré par <a href="https://www.londres.fr/big-ben">Big Ben</a> et la Victoria Tower, une tour imposante qui conserve toutes les copies des lois du Parlement depuis 1497.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap game">
+        <div class="game-scroll">
+          <div id="chemin" tabindex="0" aria-label="Plateau de jeu : cliquez puis utilisez les touches Z, Q, S, D">
+            <div id="carre"></div>
+            <img src="../Images/arret-bus.svg" class="arretbus" alt="Arrêt de bus">
+          </div>
+        </div>
+        <div>
+          <h2>Mini-jeu : prenez le bus</h2>
+          <p class="prose">Conduisez le bus rouge jusqu’à l’arrêt en suivant la route. Cliquez sur le plateau, puis utilisez les touches <kbd>Z</kbd> <kbd>Q</kbd> <kbd>S</kbd> <kbd>D</kbd> ou les flèches du clavier. Sur téléphone, utilisez les boutons ci-dessous.</p>
+          <div class="pad" aria-label="Commandes du bus">
+            <button type="button" class="btn ghost" data-touche="z" aria-label="Haut">▲</button>
+            <button type="button" class="btn ghost" data-touche="q" aria-label="Gauche">◀</button>
+            <button type="button" class="btn ghost" data-touche="s" aria-label="Bas">▼</button>
+            <button type="button" class="btn ghost" data-touche="d" aria-label="Droite">▶</button>
+          </div>
+          <button type="button" class="btn ghost" id="rejouer">Recommencer</button>
+          <p class="result" id="message-jeu" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrap">
+        <h2>Sur les traces d’Harry Potter</h2>
+        <p class="prose">Dix lieux de tournage et d’inspiration de la saga, de Londres jusqu’en Écosse.</p>
+        <ol class="places">
+          <li>
+            <img src="../Images/imgtrace2.jfif" alt="Le quai 9¾ à la gare de King’s Cross" loading="lazy">
+            <div class="prose">
+              <h3>Londres : la gare de King’s Cross</h3>
+              <p>Le Poudlard Express, qui emmène Harry pour la première fois à l’école des sorciers, a été filmé ici. Le quai 9¾ n’existe pas vraiment, mais vous trouverez le panneau et un chariot qui disparaît à moitié dans le mur, près de la boutique Harry Potter dans le hall de la gare. Il faut souvent faire la queue pour prendre une photo.</p>
+            </div>
+          </li>
+          <li>
+            <img src="../Images/imgtrace3.jfif" alt="La galerie couverte de Leadenhall Market" loading="lazy">
+            <div class="prose">
+              <h3>Londres : Leadenhall Market</h3>
+              <p>Cette belle galerie marchande victorienne, près de la station de métro Monument, a servi de décor au Chemin de Traverse. Dans les films, les jeunes sorciers viennent y faire leurs achats et passent au Chaudron Baveur boire une bièraubeurre. Dans la vraie vie, ce « pub » est un cabinet d’opticien. Le quartier compte de bons restaurants et de jolies boutiques, mais évitez l’heure du déjeuner : la galerie est alors envahie par les employés en pause.</p>
+            </div>
+          </li>
+          <li>
+            <img src="../Images/imgtrace4.jfif" alt="Le hall d’entrée des studios Warner Bros" loading="lazy">
+            <div class="prose">
+              <h3>Banlieue de Londres : les studios Warner Bros</h3>
+              <p>Les studios Harry Potter sont sans doute le meilleur endroit à visiter pour les fans. On y découvre comment les films ont été tournés, on parcourt de nombreux décors et on voit les costumes originaux des acteurs, ainsi que des démonstrations d’effets spéciaux et des maquettes.</p>
+            </div>
+          </li>
+          <li>
+            <img src="../Images/imgtrace5.jfif" alt="Le grand réfectoire de Christ Church à Oxford" loading="lazy">
+            <div class="prose">
+              <h3>Oxford : Christ Church</h3>
+              <p>L’université d’Oxford possède de nombreux bâtiments aussi anciens que magnifiques. À Christ Church, vous découvrirez la salle qui a inspiré la Grande Salle où Harry et ses amis prennent leurs repas à Poudlard. Ce bâtiment du XVIe siècle a gardé tout son charme et se visite librement.</p>
+            </div>
+          </li>
+          <li>
+            <img src="../Images/imgtrace6.jfif" alt="Le château d’Alnwick" loading="lazy">
+            <div class="prose">
+              <h3>Northumberland : le château d’Alnwick</h3>
+              <p>Le château d’Alnwick a joué un rôle important dans les films. Vous verrez l’endroit exact où Harry apprend à voler sur un balai, et vous pourrez même participer à une initiation au vol en balai. Le château a aussi servi de décor à <em>Downton Abbey</em> et à <em>Robin des Bois</em>.</p>
+            </div>
+          </li>
+          <li>
+            <img src="../Images/imgtrace7.jfif" alt="La cathédrale de Durham" loading="lazy">
+            <div class="prose">
+              <h3>Durham : la cathédrale</h3>
+              <p>La cathédrale de Durham est l’un des plus beaux édifices médiévaux d’Angleterre. On la voit dans plusieurs scènes, dont celle où Harry, Hermione et Ron transforment des animaux en gobelets avec le sortilège « <em>Fera Verto</em> ». Des visites guidées ont lieu presque tous les jours pour environ 5 £.</p>
+            </div>
+          </li>
+          <li>
+            <img src="../Images/imgtrace8.webp" alt="La gare de Goathland" loading="lazy">
+            <div class="prose">
+              <h3>North Yorkshire : la gare de Goathland</h3>
+              <p>La gare de Pré-au-Lard est en réalité celle d’un village pittoresque des North York Moors, près de la ville balnéaire de Whitby. Construite en 1865, elle a gardé son charme d’époque. Des trains à vapeur circulent toujours sur les 38 kilomètres de voie entre Pickering et Whitby.</p>
+            </div>
+          </li>
+          <li>
+            <img src="../Images/imgtrace9.webp" alt="La vallée de Glencoe en Écosse" loading="lazy">
+            <div class="prose">
+              <h3>Écosse : Glencoe</h3>
+              <p>C’est à Glencoe qu’était installée la cabane d’Hagrid dans le troisième film, <em>Harry Potter et le prisonnier d’Azkaban</em>. Le décor a été démonté, mais la vue depuis l’auberge Clachaig Inn, au-dessus de la vallée, rappellera des souvenirs aux fans.</p>
+            </div>
+          </li>
+          <li>
+            <img src="../Images/imgtrace10.jfif" alt="Un train à vapeur sur le viaduc de Glenfinnan" loading="lazy">
+            <div class="prose">
+              <h3>Écosse : le viaduc de Glenfinnan</h3>
+              <p>Au cœur des Highlands, ce viaduc de 30 mètres de haut surplombe le Loch Shiel. Les fans reconnaîtront le paysage de la ligne qui relie Londres à Pré-au-Lard. La voie ferrée est toujours en service, et le site est souvent une étape des excursions vers le Loch Ness.</p>
+            </div>
+          </li>
+          <li>
+            <img src="../Images/imgtrace11.webp" alt="L’école George Heriot’s à Édimbourg" loading="lazy">
+            <div class="prose">
+              <h3>Édimbourg : George Heriot’s School</h3>
+              <p>Cette école privée n’apparaît pas à l’écran, mais Poudlard s’en serait inspiré : J.K. Rowling a écrit les premiers tomes dans des cafés tout proches. Des visites guidées sur le thème d’Harry Potter permettent de découvrir ces lieux d’inspiration.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <h2>Visiter les studios Warner Bros</h2>
+          <p class="prose">Le prix du billet dépend de l’âge : 49,95 £ à partir de 16 ans, 39,95 £ de 5 à 15 ans, gratuit pour les 4 ans et moins.</p>
+        </div>
+        <form class="tool" id="form-ticket" novalidate>
+          <h3>Calculer le prix des billets</h3>
+          <div class="tool-row">
+            <div class="field">
+              <label for="age">Âge</label>
+              <input type="number" id="age" min="0" max="120" placeholder="Par exemple 20">
+            </div>
+            <div class="field">
+              <label for="nombre">Nombre de personnes</label>
+              <input type="number" id="nombre" min="1" value="1">
+            </div>
+            <button type="submit" class="btn">Calculer</button>
+          </div>
+          <p class="result" id="resultat-ticket" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p>Projet web réalisé par Hadi Assi.</p>
+        <p>Textes et images : voir les sources dans le fichier README du projet.</p>
+      </div>
+      <ul>
+        <li><a href="https://www.instagram.com/london/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/visitlondon/">Facebook</a></li>
+        <li><a href="https://www.youtube.com/watch?v=I8KSAtos-dk">Hymne national</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
